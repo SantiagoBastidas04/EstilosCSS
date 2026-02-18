@@ -28,12 +28,12 @@ h1 {
 
 /* Main */
 main {
-    padding: 10px 0; /* Espaciado vertical */
+    padding: 10px 5px; /* Espaciado vertical */
 }
 
 .container-main{
     background-color: #2C3E50;
-    padding: 40px 5%;
+    padding: 40px 2% 40px 6%; /* Espaciado interno */
     display: grid; /* Organización en tarjetas */
     grid-template-columns: 30% 30% 30%; /* Tres columnas */
     gap: 40px; /* Espacio entre tarjetas */
@@ -89,13 +89,16 @@ footer{
 .container-footer{
     background-color: #2C3E50;
     color: #00A59D;
+    border: 3px solid #00A59D;
     text-align: center;
-    font-size: 15px;
+    font-size: 19px;
     padding: 1px 50px 5px 50px;
     border-radius: 20px;
 }
 
-
+#text-id{
+    padding-top: 2%;
+}
 
 .card{
     width: 90%;
