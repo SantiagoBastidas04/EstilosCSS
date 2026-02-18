@@ -1,0 +1,103 @@
+/* ====== HEADER ====== */
+header{
+    padding: 5px; /* Espacio interno general del encabezado */
+}
+
+/*accede a traves de la clase con el . */
+.container-header{
+    display: grid; /* crea una grilla de columnas */
+    grid-template-columns: 30% 70%; /* Logo 30% - Título 70% */
+    padding: 20px 10% 2% 10%; /* Espaciado interno */
+    border: 3px solid #00A59D; /* Borde decorativo con colores hexadecimal*/
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #2C3E50; /* Fondo azul oscuro */
+}
+
+/*accede a traves del identificador con el # */
+#logo {
+    width: 20%; /* Tamaño relativo del logo */
+    padding-top: 5px; /* Espacio hacia arriba*/
+}
+
+h1 {
+    color: #00A59D; /* Color principal del título */
+    font-size: 35px; /*tamanio de la fuente*/
+    text-align: justify;
+}
+
+
+/* Main */
+main {
+    padding: 10px 0; /* Espaciado vertical */
+}
+
+.container-main{
+    background-color: #2C3E50;
+    padding: 40px 5%;
+    display: grid; /* Organización en tarjetas */
+    grid-template-columns: 30% 30% 30%; /* Tres columnas */
+    gap: 40px; /* Espacio entre tarjetas */
+    border-radius: 20px;
+}
+
+
+/* Cards */
+
+/*Color diferente para cada card de los medicos*/
+
+#med1{ background-color: #FFE5D9; }
+#med2{ background-color: #D4A5A5; }
+#med3{ background-color: #A3C4F3; }
+#med4{ background-color: #CFBAF0; }
+#med5{ background-color: #F1C0E8; }
+#med6{ background-color: #FFCFD2; }
+
+#med1, #med2, #med3, #med4, #med5, #med6{
+    border-radius: 20px;
+    display: flex; /* Centra el contenido */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* botones */
+button{
+    border-radius: 30px; /* Botón redondeado */
+    background-color: #2C3E50;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+.foto-medico{
+    width: 50px; /*ancho*/
+    height: 60px; /*alto*/
+    padding-bottom: 10px;
+}
+
+.info-medicos{
+    text-align: justify;
+    font-size: 20px;
+}
+
+footer{
+    padding: 5px; /* Espacio interno general del pie de página */
+}
+/* footer */
+.container-footer{
+    background-color: #2C3E50;
+    color: #00A59D;
+    text-align: center;
+    font-size: 15px;
+    padding: 1px 50px 5px 50px;
+    border-radius: 20px;
+}
+
+
+
+.card{
+    width: 90%;
+    height: 90%;
+}
