@@ -33,9 +33,9 @@ main {
 
 .container-main{
     background-color: #2C3E50;
-    padding: 40px 2% 40px 6%; /* Espaciado interno */
+    padding: 40px 4% 40px 4%; /* Espaciado interno - corregido para que sea igual en ambos lados */
     display: grid; /* Organización en tarjetas */
-    grid-template-columns: 30% 30% 30%; /* Tres columnas */
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas */
     gap: 40px; /* Espacio entre tarjetas */
     border-radius: 20px;
 }
@@ -75,11 +75,13 @@ button{
     width: 50px; /*ancho*/
     height: 60px; /*alto*/
     padding-bottom: 10px;
+    margin-top: auto; /* empuja la foto siempre hacia abajo sin importar cuanto texto haya arriba */
 }
 
 .info-medicos{
     text-align: justify;
     font-size: 20px;
+    min-height: 150px; /* altura minima garantizada para que todas las cards alineen la foto en la misma posicion */
 }
 
 footer{
